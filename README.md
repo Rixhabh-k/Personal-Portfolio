@@ -49,7 +49,7 @@
 <h2>📸 Project Preview</h2>
 
 <p>
-  <img src="https://raw.githubusercontent.com/Rixhabh-k/Personal-Portfolio/main/Screenshot%202025-06-12%20105155.png" alt="Portfolio Screenshot" style="max-width: 100%;" />
+  <img src="project-screenshot.png" alt="Portfolio Screenshot" style="max-width: 100%; border: 1px solid white;" />
 </p>
 
 
