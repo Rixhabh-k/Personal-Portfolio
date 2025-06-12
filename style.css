@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    cursor: none;
+}
+
+body{
+    background: #111111;
+    cursor: none;
+}
+
+/* body{
+    overflow-x: hidden;
+} */
+
+#mainCursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Important: allow mouse to pass through */
+  z-index: 9999;         /* Stay on top of everything */
+}
+
+#cursor {
+  width: 20px;
+  height: 20px;
+  
+ 
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+/* !nav bar style starts here  */
+header {
+    /* background: #d23535; */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+header .scrollArrow img {
+    height: 50px;
+    
+}
+
+header h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: white;
+    line-height: 28px;
+    font: 2rem;
+}
+
+header .scrollArrow {
+    display: flex;
+    align-items: center;
+}
+
+header .resumeBtn a {
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    background: #3FD1F0;
+    padding: 5px 15px;
+    border-radius: 60px;
+    /* box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff; */
+}
+
+/*! nav bar style ends here  */
+
+/*! introduction page   */
+
+#introduction {
+    height: 100%;
+    width: 100%;
+    background: #111111;
+    color: white;
+    padding-top: 80px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.main-intro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-intro-container h1 {
+    font-size: 2.5rem;
+}
+
+.main-intro-container .aboutimg {
+    height: 500px;
+}
+
+.main-intro-container .aboutimg-phone {
+    display: none;
+}
+
+/*! introduction section ends here  */
+
+/*! Scroll name section  */
+
+#nameScroll {
+  height: auto;  
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #111;
+  padding: 150px 0;
+}
+
+.scroll-track {
+  display: inline-flex;
+  width: max-content;
+}
+
+#nameScroll h1 {
+  font-size: 5rem;
+  margin-right: 50px;
+  color: white;
+  font-family: "Bricolage Grotesque", sans-serif;
+  white-space: nowrap;
+}
+
+
+
+/*! About section  */
+
+#about-section {
+    height: auto;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.main-about-section{
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Bricolage Grotesque",
+}
+
+.main-about-section h2 span {
+    color: #FE7D84;
+}
+
+.main-about-section h1, h2 {
+    font-size: 4rem;
+}
+
+/*! About section 2 */
+
+#about-section-2 {
+    height: auto;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.main-about-section-2{
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Bricolage Grotesque",
+}
+
+.main-about-section-2 h2 span {
+    
+    color: #56BEF5;
+}
+
+.main-about-section-2 h2 .diploma {
+    color: #FE7D84;
+}
+
+.main-about-section-2 h2 {
+    font-size: 4rem;
+}
+
+/*! About section 3 */
+
+#about-section-3 {
+    height: auto;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.main-about-section-3{
+    padding: 0px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Bricolage Grotesque"
+}
+
+.main-about-section-3 h2 span {
+    color: #FE7D84;
+}
+
+.main-about-section-3 h2 {
+    font-size: 4rem;
+}
+
+/*! about section button  */
+
+.about-section-btn{
+    height: auto;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.about-section-btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.btn1{
+    background: #56BEF5;
+}
+
+.btn2{
+    background: #FA5A5A;
+}
+
+.fa-github {
+    color: black;
+}
+
+/*! Skills section  */
+
+#skills-section{
+    height: auto;
+    width: 100%;
+    background: #222222;
+    padding: 40px 0px;
+}
+
+.skills-main-container{
+    padding: 20px 20px;
+    font-family: "Bricolage Grotesque";
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill-heading h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.skill-heading span {
+    color: #38CDFA;
+}
+
+.skill-heading p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.dev {
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dev-skills-container  {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.dev-skills-container img {
+    height: 60px;
+}
+
+/* design container  */
+
+.skills-container-design {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.des {
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.des-skills-container  {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.des-skills-container img {
+    height: 60px;
+}
+
+/* tool container  */
+
+.skills-container-tool {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dev-tool {
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.dev-skills-container-tool  {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.dev-skills-container-tool img {
+    height: 60px;
+}
+
+/* Projects page  */
+
+.project-page{
+    height: auto;
+    width: 100%;
+    background: #303030;
+    padding: 30px 0px;
+}
+
+.project-page-main-wrapper {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.project-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-heading h1 {
+    color: white;
+    font-family: "Bricolage Grotesque";
+    font-size: 3.5rem;
+}
+
+.project-heading p {
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Bricolage Grotesque";
+}
+
+.project-heading h1 span {
+    color: #FC626A;
+}
+
+.project-wrapper {
+    height: auto;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+.project-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.project-showcase img {
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 8px;
+}
+
+/*! work page  */
+
+.work-page{
+    height: auto;
+    padding: 30px 0px;
+    width: 100%;
+    background: #222222;
+}
+
+.work-page-main-wrapper{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.work-heading h1{
+    color: white;
+    font-family: "Bricolage Grotesque";
+    font-size: 3.5rem;
+}
+
+.work-heading h1 span {
+    color: #F6BA53;
+}
+
+.work-list-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.work-list {
+    padding: 5px 0px;
+    /* border: 1px solid white; */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: "Bricolage Grotesque";
+    font-size: 1.3rem;
+}
+
+/*! footer  */
+
+.footer {
+    height: auto;
+    padding: 30px 0px;
+    width: 100%;
+    background: #303030;
+    font-family: "Bricolage Grotesque";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-footer {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.main-footer h1 {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.main-footer h2 {
+    font-size: 1.5rem;
+}
+
+.mail{
+    color: #FC626A;
+}
+
+.insta{
+    color: #F6BA53;
+}
+
+.linkedin{
+    color: #51CDE7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! extra */
+
+.profilePhoto {
+  perspective: 800px;
+}
+
+.aboutimg {
+  transition: transform 0.2s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+  /* Optional: slight scale to prevent visual shrink */
+  scale: 1.05;
+}
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Remove white bg */
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;         /* Only grey thumb */
+  border-radius: 10px;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: grey transparent; /* Only grey thumb, no track */
+}
+
+
+/* ---------------------------------------- */
+
+/* media screen */
+
+@media (max-width:450px) {
+    .main-intro-container .aboutimg {
+    display: none;
+     }
+
+     .main-intro-container .aboutimg-phone {
+        display: flex;
+        height: 500px;
+     }
+
+     .main-footer h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+        .main-footer h2 {
+            font-size: 1.5rem;
+        }
+
+        .main-about-section h1, h2 {
+            font-size: 2rem;
+        }
+
+        .main-about-section {
+            padding: 0 20px;
+            font-family: "Bricolage Grotesque";
+        }
+
+        .main-about-section-2{
+    padding: 0 20px;
+    
+}
+
+
+
+.main-about-section-2 h2 {
+    font-size: 2rem;
+}
+
+.main-about-section-3{
+    padding: 0px 20px;
+    
+}
+
+
+
+.main-about-section-3 h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    padding: 10px 15px;
+}
+
+.skill-heading h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+.skill-heading p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.dev{
+    font-size: 1rem;
+}
+
+.des{
+    font-size: 1rem;
+}
+
+.dev-tool{
+    font-size: 1rem;
+}
+
+.dev-skills-container img {
+    height: 45px;
+}
+
+.des-skills-container img {
+    height: 45px;
+}
+
+.dev-skills-container-tool img {
+    height: 45px;
+}
+
+.project-heading h1 {
+    color: white;
+    font-family: "Bricolage Grotesque";
+    font-size: 2rem;
+}
+
+.project-heading p {
+    font-size: 1rem;
+    color: white;
+    font-family: "Bricolage Grotesque";
+}
+
+.work-heading h1 {
+    font-size: 2rem;
+}
+
+.work-list {
+    font-size: 0.8rem;
+}
+
+.main-footer h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main-footer h2 {
+    font-size: 1rem;
+}
+}
