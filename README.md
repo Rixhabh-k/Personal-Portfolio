@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Made%20With-JavaScript-yellow?style=flat-square" alt="JS" />
   <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square" alt="Status" />
 </p>
-
+  
 <p>
   A fully responsive personal portfolio built using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>GSAP</strong>.
 </p>
